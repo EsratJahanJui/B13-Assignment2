@@ -138,7 +138,7 @@ nav {
 .banner-text {
   padding-top: 240px;
 }
- 
+
 /* Start About Section */
 .about-container .about-text-container {
   text-align: center;
@@ -146,7 +146,8 @@ nav {
 .about-container .about-des {
   font-size: 16px;
   line-height: 22px;
-  padding: 14px 0;
+  color: #aeaec0;
+  margin-bottom: 24px;
 }
 
 /* statistics-items  */
@@ -175,6 +176,45 @@ nav {
   border-top: 1px solid rgb(62, 55, 55);
   margin: 0 auto;
 }
+/* Why Choose section */
+.why-choose-container-wrapper {
+  background-color: #1e0a35;
+  /* background-color: red; */
+}
+.why-choose-container-wrapper .choose-text {
+  text-align: center;
+  padding: 19px 0;
+}
+.why-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+.why-card-wrapper .why-card {
+  min-height: 200px;
+  max-width: 400px;
+  width: 100%;
+
+  border-radius: 20px;
+  background-color: #2a0f4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+}
+
+.why-card-wrapper .why-card .why-img {
+  width: 40px;
+  height: 53px;
+}
+.why-card-wrapper .why-card p {
+  color: #aeaec0;
+}
+
+/* border:1px solid red; */
 
 /* ------------------- */
 
@@ -239,17 +279,51 @@ nav {
     padding: 14px 0;
   }
   /* statistics-items  */
+  .about-container .about-des {
+    font-size: 17px;
+    line-height: 22px;
+  }
   .statistics-items .statistics-items-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
-
     justify-items: center;
+
     align-items: center;
   }
   .statistics-items {
     max-width: 850px;
     margin: 0 auto;
+  }
+  .statistics-items-wrapper .stat-card span {
+    font-size: 16px;
+  }
+
+  /* Why cards */
+  .why-card-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+  }
+  .why-card-wrapper .why-card {
+    max-width: 100%;
+  }
+
+  .card-1 {
+    grid-row: span 2;
+  }
+  .card-2 {
+    grid-column: span 2;
+  }
+  .card-3 {
+    grid-column: span 2;
+  }
+  .card-4 {
+    grid-column: span 2;
   }
 
   /* ======= */
