@@ -27,6 +27,10 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
+p,
+span {
+  color: #f7f7f9;
+}
 
 /* Header Nav */
 nav .logo {
@@ -74,7 +78,7 @@ nav {
 .banner .banner-container {
   background-image: url(./assets/hero-bg.png);
   width: 100%;
-  height: 50vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -87,16 +91,16 @@ nav {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -75%);
-  width: 120px;
+  transform: translate(-50%, -85%);
+  width: 190px;
   height: auto;
 }
 .icon-image {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -93%);
-  width: 40px;
+  transform: translate(-50%, -99%);
+  width: 90px;
   height: auto;
 }
 .banner-text-wrapper {
@@ -132,14 +136,51 @@ nav {
   gap: 7px;
 }
 .banner-text {
-  margin-top: 240px;
+  padding-top: 240px;
+}
+ 
+/* Start About Section */
+.about-container .about-text-container {
+  text-align: center;
+}
+.about-container .about-des {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14px 0;
+}
+
+/* statistics-items  */
+.statistics-items .statistics-items-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+
+  justify-items: center;
+  align-items: center;
+}
+.statistics-items-wrapper .stat-card h2 {
+  color: #00ff88;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.statistics-items-wrapper .stat-card span {
+  color: #f7f7f9;
+  font-size: 12px;
+}
+.statistics-items {
+  padding: 30px 0;
+  max-width: 440px;
+
+  border-top: 1px solid rgb(62, 55, 55);
+  margin: 0 auto;
 }
 
 /* ------------------- */
 
 /* Large Device: above 992 px */
 @media (min-width: 992px) {
-    /* header section */
+  /* header section */
   body {
     max-width: 1300px;
   }
@@ -178,7 +219,38 @@ nav {
     width: 100px;
     height: auto;
   }
+  .nav-btn {
+    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+  }
+  .banner {
+    margin-bottom: 50px;
+    /* border:3px solid red;  */
+  }
+
   /* end header */
+  /* about  */
+  .about-container .about-des {
+    font-size: 9px;
+    line-height: 20px;
+    padding: 14px 0;
+  }
+  /* statistics-items  */
+  .statistics-items .statistics-items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+
+    justify-items: center;
+    align-items: center;
+  }
+  .statistics-items {
+    max-width: 850px;
+    margin: 0 auto;
+  }
 
   /* ======= */
 }
