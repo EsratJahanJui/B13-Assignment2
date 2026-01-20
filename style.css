@@ -138,6 +138,18 @@ nav {
 .banner-text {
   padding-top: 240px;
 }
+.banner .center-wrapper .badge-new {
+  background-color: #00ff88;
+  color: black;
+  font-size: 10px;
+  border-radius: 20px;
+  padding: 5px 9px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(150%, -600%);
+}
 
 /* Start About Section */
 .about-container .about-text-container {
@@ -295,12 +307,12 @@ nav {
 
   padding: 3px 5px;
   border-radius: 50%;
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
-.host-content-wrapper .social-links ul li img{
-width:11px;
-height: 11px;
+.host-content-wrapper .social-links ul li img {
+  width: 11px;
+  height: 11px;
 }
 /* footer */
 .footer-container {
@@ -323,10 +335,9 @@ height: 11px;
   font-size: 11px;
   color: #aeaec0;
 }
-.platform-info ul li img{
+.platform-info ul li img {
   width: 10px;
-  height:10px;
-
+  height: 10px;
 }
 .footer-wrapper p {
   font-size: 11px;
@@ -347,12 +358,11 @@ height: 11px;
   align-items: center;
   padding-bottom: 20px;
   text-align: center;
-   
 }
 /* .footer-container{
   margin-bottom:100px;
 } */
- 
+
 /* ------------------- */
 
 /* Large Device: above 992 px */
@@ -406,6 +416,17 @@ height: 11px;
   .banner {
     margin-bottom: 50px;
     /* border:3px solid red;  */
+  }
+  .banner .center-wrapper .badge-new {
+    /*   
+  font-size: 10px;
+  border-radius: 20px;
+  padding: 5px 9px;
+  font-weight: bold;
+   position: absolute;
+  top: 50%;
+  left: 50%; */
+    transform: translate(150%, -750%);
   }
 
   /* end header */
@@ -504,12 +525,9 @@ height: 11px;
     /* text-align: center; */
   }
   .footer-container .platform-info ul {
-   
-  grid-template-columns: repeat(4, 1fr);
-  gap:2px;
-  
-   
-}
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
 
   /* ======= */
 }
