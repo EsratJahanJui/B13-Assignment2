@@ -26,6 +26,12 @@ body {
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  transform: scale(0.75);
+  box-shadow: 0 8px 20px rgba(251, 9, 180, 0.4);
 }
 p,
 span {
@@ -95,6 +101,7 @@ nav {
   width: 190px;
   height: auto;
 }
+
 .icon-image {
   position: absolute;
   top: 50%;
@@ -103,6 +110,7 @@ nav {
   width: 90px;
   height: auto;
 }
+
 .banner-text-wrapper {
   display: flex;
   justify-content: center;
@@ -287,6 +295,12 @@ nav {
   text-align: center;
   line-height: 1.6;
   margin-bottom: 100px;
+}
+.host-content-wrapper .host-img img {
+  transition: transform 0.35s ease-in;
+}
+.host-content-wrapper .host-img img:hover {
+  transform: scale(1.05);
 }
 .host-content-wrapper p {
   font-size: 14px;
@@ -484,6 +498,7 @@ nav {
     grid-column: span 2;
   }
   /* episode   */
+
   .ep-card-wrapper .ep-card {
     width: 250px;
     height: 100px;
@@ -501,6 +516,15 @@ nav {
     justify-items: center;
 
     align-items: center;
+  }
+  .ep-card-wrapper .ep-card {
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease;
+    box-shadow: 5px 18px 35px rgba(220, 210, 210, 0.4);
+  }
+  .ep-card-wrapper .ep-card:hover {
+    transform: scale(1.05);
   }
   .featured-ep-container {
     margin-bottom: 225px;
